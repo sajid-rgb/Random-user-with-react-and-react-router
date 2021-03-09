@@ -17,11 +17,12 @@ import Contacts from './Components/Contacts/Contacts';
 function App() {
   const [friends,setFriends] = useState([]);
   const friendsList =()=>{
-    const url = "https://randomuser.me/api/?results=100";
+    const url = 'https://randomuser.me/api/?results=50'
     fetch(url)
     .then(res=>res.json())
     .then(data=> setFriends(data.results))
-}
+};
+
 useEffect(friendsList,[])
   return (
     <div className="App">
@@ -30,15 +31,16 @@ useEffect(friendsList,[])
       <Router>
         <Switch>
           <Route path='/friends'>
-          <Main friends={friends}></Main>
+          <Main friends={friends} />
             
             </Route>
-            <Route path='/home'>
+            
+             <Route path='/home'>
             <Main friends={friends}/>
-          </Route>
+          </Route> 
          
           <Route exact path='/'>
-            <Main />
+            <Main friends={friends}/>
           </Route>
           <Route path='/contacts'>
             <Contacts></Contacts>

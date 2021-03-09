@@ -19,7 +19,7 @@ const Friends = (props) => {
                 <Card.Title><h5>{title} {first} {last}</h5>
                 <p>{gender}</p>
                 </Card.Title>
-                <Link to={"/"+first}>Details</Link>
+                <Link to={"/"+first}>More Details</Link>
                 <div style={{margin:'0 auto'}}>
                 <button className="btn btn-danger w-md-50 mb-2 " onClick={() =>handleClick(friend,email)}>Add FriedList</button>
                 </div>

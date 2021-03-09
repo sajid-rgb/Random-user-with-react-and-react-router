@@ -32,11 +32,10 @@ const Details = ({friends}) => {
                 </div>
                 <h3 className="text-info text-start">Location</h3>
                 <div className="text-dark " style={{ lineHeight: .2}}>
-                        <p>Street-no: {number}</p>
-                        <p>Street-Name:{street.name}</p>
+                        <p>Street no: {number}</p>
+                        <p>Street name:{street.name}</p>
                         <p>City:{city}</p>
                         <p>Country:{country}</p>
-                        
                         </div>
             </div>
 

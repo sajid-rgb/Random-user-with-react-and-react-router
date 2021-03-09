@@ -51,7 +51,7 @@ const Contacts = () => {
     </Form.Group>
 
     <Form.Group as={Col} controlId="formGridZip">
-      <Form.Label>Phone Number</Form.Label>
+      <Form.Label>Cell</Form.Label>
       <Form.Control />
     </Form.Group>
   </Form.Row>
